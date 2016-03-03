@@ -16,10 +16,10 @@ end
 Then, you can manually change the locale wherever in your application using the `locale` parameter. 
 For instance, you can put this in the view responsible to change the language (in haml):
 ```
-          %ul.dropdown-menu{role: 'menu'}
-            %li=link_to 'Deutsch', :locale=>'de'
-            %li=link_to 'Français', :locale=>'fr'
-            %li=link_to 'English', :locale=>'en'
+%ul.dropdown-menu{role: 'menu'}
+      %li=link_to 'Deutsch', :locale=>'de'
+      %li=link_to 'Français', :locale=>'fr'
+      %li=link_to 'English', :locale=>'en'
 ```
 to change the locale using a bootstrap dropdown menu.
 

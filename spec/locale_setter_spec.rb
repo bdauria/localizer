@@ -1,4 +1,4 @@
-require 'locale_setter'
+require 'rails_localizer/locale_setter'
 require 'i18n'
 
 RSpec.describe LocaleSetter do

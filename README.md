@@ -2,9 +2,13 @@
 A simple gem to handle the initialization of the I18n locale.
 
 Instructions:
+
+Reference the gem in your Gemfile:
+`gem 'rails_localizer', :git => 'git://github.com/bdauria/rails_localizer.git'`
+
 Add these lines to your ApplicationController:
 - `include Localizer` 
-- and `before_action: set_locale`:
+- `before_action: set_locale`:
 
 ```
 class ApplicationController < ActionController::Base
@@ -24,9 +28,9 @@ For instance, you can put this in the view responsible to change the language (i
 to change the locale using a bootstrap dropdown menu.
 
 The default behaviour of the gem is the following:
-- If no locale is present within the `locale` parameter or within the locale session, i18n default locale is used.
+- If no locale is present within the `locale` request parameter or within the `locale` session parameter, i18n default locale will be used.
 - If a locale is present within the `locale` session, it'll be used instead of the default one.
-- If a locale is present within the `locale` parameter and is defined in i18n available locales, it'll be used, and assigned saved into the session.
+- If a locale is present within the `locale` parameter and is defined in i18n available locales, it'll be used, and saved into the session.
 
 Pull requests really welcome !
 

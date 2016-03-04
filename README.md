@@ -1,7 +1,7 @@
 # Rails Localizer
 A simple gem to handle the initialization of the I18n locale.
 
-Instructions:
+## Instructions
 
 Reference the gem in your Gemfile:
 `gem 'rails_localizer', :git => 'git://github.com/bdauria/rails_localizer.git'`
@@ -31,6 +31,10 @@ The default behaviour of the gem is the following:
 - If no locale is present within the `locale` request parameter or within the `locale` session parameter, i18n default locale will be used.
 - If a locale is present within the `locale` session, it'll be used instead of the default one.
 - If a locale is present within the `locale` parameter and is defined in i18n available locales, it'll be used, and saved into the session.
+
+## Dependencies
+- http_accept_language (https://github.com/iain/http_accept_language)
+- i18n (https://github.com/svenfuchs/i18n)
 
 Pull requests really welcome !
 
